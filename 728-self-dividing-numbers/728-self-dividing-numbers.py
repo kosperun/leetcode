@@ -2,10 +2,8 @@ class Solution:
     def selfDividingNumbers(self, left: int, right: int) -> List[int]:
         numbers_int = list(range(left, right + 1))
         res = []
-        numbers = []
-        for num in numbers_int:
-            numbers.append(str(num))
-
+        numbers = [str(num) for num in numbers_int]
+        
         for num in numbers:
             digs = list(num)
             temp_cnt = 0
